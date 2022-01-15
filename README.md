@@ -7,13 +7,13 @@
 
 
 ### type casting
-String(a) <\br>
-Number(b) <\br>
+String(a) <br\>
+Number(b) <br\>
 
 ### logical operations
-===    strict equal<\br>
-==     equal with conversions<\br>
-||     or<\br>
-&&.    and<\br>
+===    strict equal<br\>
+==     equal with conversions<br\>
+||     or<br\>
+&&.    and<br\>
 
 
