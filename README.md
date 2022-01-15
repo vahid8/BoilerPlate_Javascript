@@ -14,6 +14,7 @@ Number(b)
 ===    strict equal \
 ==     equal with conversions \
 ||     or \
-&&.    and 
+&&    and \
+n >= 20 ? console.log("Tr") : console.log("Fa") Ternary operation
 
 
