@@ -7,7 +7,7 @@
 
 
 ### type casting
-String(a) <br\>
+String(a)\
 Number(b) <br\>
 
 ### logical operations
