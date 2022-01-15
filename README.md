@@ -8,12 +8,12 @@
 
 ### type casting
 String(a)\
-Number(b)\
+Number(b)
 
 ### logical operations
 ===    strict equal \
 ==     equal with conversions \
 ||     or \
-&&.    and \
+&&.    and 
 
 
