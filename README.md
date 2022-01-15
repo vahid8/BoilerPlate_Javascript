@@ -6,6 +6,14 @@
 |                                         |    written in two lines´) |
 
 
-# type casting
-String(a)
-Number(b)
+### type casting
+String(a) \\
+Number(b) \\
+
+### logical operations
+===    strict equal
+==     equal with conversions
+||     or
+&&.    and
+
+
