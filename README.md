@@ -1,4 +1,8 @@
 # BoilerPlate_Javascript
+
+Type this line to actiavte strict mode ( it improves debugging)\
+'use strict'
+
 | Command | Description |
 | --- | --- |
 | String Template Literals (inline print) | console.log(´My name is ${myFirstName}´) |
