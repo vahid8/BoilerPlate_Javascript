@@ -47,8 +47,11 @@ const calcAge3 = birthYear => 2037 - birthYear
 or for multiline
 
 const calcAge3 = birthYear => {
-      const age = 2037 - birthYear
+      const age = 2037 - birthYear;
+      return age;
 }
+```
+
 
 
 
