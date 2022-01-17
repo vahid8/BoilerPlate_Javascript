@@ -60,6 +60,17 @@ or
 const year = new Array(1999,2000,2001)
 // Get the length
 console.log(year.length);
-
+// appending element to array
+year.push(2002)
+// Insert element at the beginning
+year.unshift(1998)
+// remove elements from the end
+year.pop()
+// remove item from the begining
+year.shift()
+// get the index of an element
+year.indexOf(2000)
+// check if an element exists
+doesExist = year.includes(2000)
 
 
