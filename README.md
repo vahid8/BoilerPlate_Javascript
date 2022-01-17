@@ -52,6 +52,14 @@ const calcAge3 = birthYear => {
 }
 ```
 
+## Arrays
+```
+// Creating array 2 methods 
+const year = [1999,2000,2001]
+or
+const year = new Array(1999,2000,2001)
+// Get the length
+console.log(year.length);
 
 
 
