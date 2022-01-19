@@ -128,4 +128,6 @@ let txt = document.querySelector('#message').textContent;
 let value = document.querySelector('#myInput').value;
 // button event handler
 document.querySelector('#check').addEventListener('click', myFunction())
+// change css style 
+document.querySelector('.message').style.color = 'red';
 
