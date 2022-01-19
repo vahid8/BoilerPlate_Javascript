@@ -116,10 +116,16 @@ jonas.calcSpecial();
 console.log(jonas.goodSalary);
 
 # DOM (Document Object Model) manupulation
+DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
+there is no need to import them 
 ### selectors
 ```
 document.querySelector('.message') // select element by class
 document.querySelector('#message') // select element by id
-
-
+// Get content of html element
+let txt = document.querySelector('#message').textContent;
+// Get the value of an input element (e.g typed bu user)
+let value = document.querySelector('#myInput').value;
+// button event handler
+document.querySelector('#check').addEventListener('click', myFunction())
 
