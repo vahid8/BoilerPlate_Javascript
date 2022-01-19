@@ -3,6 +3,13 @@
 Type this line to actiavte strict mode ( it improves debugging)\
 'use strict'
 
+### variables definition
+```
+let, const (in ES6)
+
+var (in older versions)
+```
+
 ### Printing into console
 ```
 | String Template Literals (inline print) | console.log(´My name is ${myFirstName}´) |
