@@ -41,7 +41,7 @@ const calcAge3 = birthYear => {
 }
 ```
 
-## Primitive Data Types
+# Primitive Data Types
 string, number , boolean
 ### type casting
 String(a)\
@@ -51,7 +51,7 @@ Number(b)
 console.log(typeof var)
 ```
 
-## Data Structures
+# Data Structures
 ### Arrays
 ```
 // Creating array 2 methods 
@@ -73,6 +73,25 @@ year.indexOf(2000)
 // check if an element exists
 doesExist = year.includes(2000)
 ```
-
+### Objects
+```
+const jonas = {
+  firstName: "jonas",
+  lastName:  "chris",
+  birthYear: 1999,
+  friends: ["vahid","arman"],
+  calcAge: function()
+  {
+  return 2037 - this.birthYear;
+  }
+  calcSalary: function(monthSalary)
+  {
+  return monthSalary*12;
+  }
+}
+// Access data
+console.log(jonas.firstName) or console.log(jonas["firstName"])
+console.log(jonas.calcAge())
+console.log(jonas.calcSalary(3000)) or console.log(jonas["calcSalary"](3000)) 
 
 
