@@ -115,4 +115,11 @@ console.log(jonas.calcSalary(3000)) or console.log(jonas["calcSalary"](3000))
 jonas.calcSpecial();
 console.log(jonas.goodSalary);
 
+# DOM (Document Object Model) manupulation
+### selectors
+```
+document.querySelector('.message') // select element by class
+document.querySelector('#message') // select element by id
+
+
 
