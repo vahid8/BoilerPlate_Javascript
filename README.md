@@ -88,10 +88,16 @@ const jonas = {
   {
   return monthSalary*12;
   }
+  calcSpecial: function(salary)
+  {
+  this.goodSalary = salary*20;
+  }
 }
-// Access data
+// Access data and methods
 console.log(jonas.firstName) or console.log(jonas["firstName"])
 console.log(jonas.calcAge())
 console.log(jonas.calcSalary(3000)) or console.log(jonas["calcSalary"](3000)) 
+jonas.calcSpecial();
+console.log(jonas.goodSalary);
 
 
