@@ -1,4 +1,4 @@
-# BoilerPlate_Javascript
+# Genearl Notes
 
 Type this line to actiavte strict mode ( it improves debugging)\
 'use strict'
@@ -10,18 +10,7 @@ Type this line to actiavte strict mode ( it improves debugging)\
 |                                         |    written in two lines´) |
 ```
 
-## Data Types
-string, number , boolean
-### type casting
-String(a)\
-Number(b)
-### check type of variable 
-```
-console.log(typeof var)
-```
-
-
-## logical operations
+### logical operations
 ```
 ===    strict equal \
 ==     equal with conversions \
@@ -30,7 +19,7 @@ console.log(typeof var)
 n >= 20 ? console.log("Tr") : console.log("Fa") Ternary operation
 ```
 
-## Functions
+### Functions
 ```
 // function decleration
 function calcAge1(birthYear){
@@ -52,7 +41,18 @@ const calcAge3 = birthYear => {
 }
 ```
 
-## Arrays
+## Primitive Data Types
+string, number , boolean
+### type casting
+String(a)\
+Number(b)
+### check type of variable 
+```
+console.log(typeof var)
+```
+
+## Data Structures
+### Arrays
 ```
 // Creating array 2 methods 
 const year = [1999,2000,2001]
@@ -72,5 +72,7 @@ year.shift()
 year.indexOf(2000)
 // check if an element exists
 doesExist = year.includes(2000)
+```
+
 
 
