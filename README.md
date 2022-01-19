@@ -41,6 +41,14 @@ const calcAge3 = birthYear => {
 }
 ```
 
+### For loops
+```
+for (let i = 0 ;i <= 6; i++)
+{
+console.log(`This is the ${i}`);
+}
+```
+
 # Primitive Data Types
 string, number , boolean
 ### type casting
