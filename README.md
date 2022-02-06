@@ -114,10 +114,15 @@ console.log(jonas.calcAge())
 console.log(jonas.calcSalary(3000)) or console.log(jonas["calcSalary"](3000)) 
 jonas.calcSpecial();
 console.log(jonas.goodSalary);
+// objects are copied by reference So by change of one, the copy will be changed as well
+To make a new copy use the below command, However if there is an array or another object inside it will be copied again by reference and only the first order will be copied by value :
+const myObjectCopy = Object.assign({},myObject);
+```
 
 # DOM (Document Object Model) manupulation
 DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
 there is no need to import them 
+
 ### selectors
 ```
 document.querySelector('.message') // select element by class
@@ -130,4 +135,4 @@ let value = document.querySelector('#myInput').value;
 document.querySelector('#check').addEventListener('click', myFunction())
 // change css style 
 document.querySelector('.message').style.color = 'red';
-
+```
