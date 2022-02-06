@@ -128,6 +128,15 @@ const myObjectCopy = Object.assign({},myObject);
 ```
 const arr = ['apple', 'orrange', 'benana', 'Avocado']
 const [x, ,z] = arr // result will be x = 'apple', z = 'benana'
+
+const [i, [j,k]] = ['apple', ['orrange', 'benana']]
+
+// To get multiple retuns from a function 
+const [x, y, z] = solveProblem(theInput)
+
+// Set Default Values
+const [x=2, y=2, z=2] = [8, 9] // here z will be equal to 2 
+
 ```
 
 
