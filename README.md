@@ -118,6 +118,18 @@ console.log(jonas.goodSalary);
 To make a new copy use the below command, However if there is an array or another object inside it will be copied again by reference and only the first order will be copied by value :
 const myObjectCopy = Object.assign({},myObject);
 ```
+### Switching variables
+```
+[a, b] = [b, a]
+```
+
+### Deconstructing array
+
+```
+const arr = ['apple', 'orrange', 'benana', 'Avocado']
+const [x, ,z] = arr // result will be x = 'apple', z = 'benana'
+```
+
 
 # DOM (Document Object Model) manupulation
 DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
