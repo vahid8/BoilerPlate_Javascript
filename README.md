@@ -11,6 +11,7 @@ var (in older versions)
 ```
 
 ### Printing into console
+| Description | Command |
 | --- | --- |
 | String Template Literals (inline print) | console.log(´My name is ${myFirstName}´) |
 | String Template Literals (multiple line)| console.log(´My name is : |
@@ -67,7 +68,7 @@ console.log(typeof var)
 
 # Data Structures
 ### Arrays
-
+| Command | Description |
 | --- | --- |
 | const year = [1999,2000,2001] |  Creating array  method 1  |
 | const year = new Array(1999,2000,2001) |  Creating array  method 2  |
