@@ -11,11 +11,10 @@ var (in older versions)
 ```
 
 ### Printing into console
-```
+| --- | --- |
 | String Template Literals (inline print) | console.log(´My name is ${myFirstName}´) |
 | String Template Literals (multiple line)| console.log(´My name is : |
 |                                         |    written in two lines´) |
-```
 
 ### logical operations
 ```
@@ -69,25 +68,18 @@ console.log(typeof var)
 # Data Structures
 ### Arrays
 ```
-// Creating array 2 methods 
-const year = [1999,2000,2001]
-or
-const year = new Array(1999,2000,2001)
-// Get the length
-console.log(year.length);
-// appending element to array
-year.push(2002)
-// Insert element at the beginning
-year.unshift(1998)
-// remove elements from the end
-year.pop()
-// remove item from the begining
-year.shift()
-// get the index of an element
-year.indexOf(2000)
-// check if an element exists
-doesExist = year.includes(2000)
-```
+| --- | --- |
+| const year = [1999,2000,2001] |  Creating array  method 1  |
+| const year = new Array(1999,2000,2001) |  Creating array  method 2  |
+| console.log(year.length); | Get the length |
+| year.push(2002); | appending element to array |
+| year.unshift(1998); | Insert element at the beginning |
+| year.pop(); | remove elements from the end |
+| year.shift() | remove item from the begining |
+| year.indexOf(2000); | get the index of an element |
+| doesExist = year.includes(2000); | check if an element exists |
+
+
 ### Objects
 ```
 const jonas = {
