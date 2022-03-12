@@ -18,13 +18,17 @@ var (in older versions)
 |                                         |    written in two lines´) |
 
 ### logical operations
-```
-===    strict equal \
-==     equal with conversions \
-||     or \
-&&    and \
+| Operator | Description |
+| --- | --- |
+===   | strict equal 
+==    | equal with conversions 
+||    | or 
+&&    | and 
+
+### Ternary operator
+
 n >= 20 ? console.log("Tr") : console.log("Fa") Ternary operation
-```
+
 
 ### Functions
 ```
@@ -138,15 +142,13 @@ DOM methods and properties like Timer, Fetch  are not part of JS and are APIs pr
 there is no need to import them 
 
 ### selectors
-```
-document.querySelector('.message') // select element by class
-document.querySelector('#message') // select element by id
-// Get content of html element
-let txt = document.querySelector('#message').textContent;
-// Get the value of an input element (e.g typed bu user)
-let value = document.querySelector('#myInput').value;
-// button event handler
-document.querySelector('#check').addEventListener('click', myFunction())
-// change css style 
-document.querySelector('.message').style.color = 'red';
-```
+| Command | Description |
+| --- | --- |
+| document.querySelector('.message') | select element by class|
+| document.querySelector('#message') |  select element by id |
+| let txt = document.querySelector('#message').textContent; |  Get content of html element |
+| let value = document.querySelector('#myInput').value; | Get the value of an input element (e.g typed bu user) |
+| document.querySelector('#check').addEventListener('click', myFunction()) |  button event handler |
+| document.querySelector('.message').style.color = 'red'; | change css style |
+| --- | --- |
+
