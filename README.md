@@ -67,7 +67,7 @@ console.log(typeof var)
 
 # Data Structures
 ### Arrays
-```
+
 | --- | --- |
 | const year = [1999,2000,2001] |  Creating array  method 1  |
 | const year = new Array(1999,2000,2001) |  Creating array  method 2  |
