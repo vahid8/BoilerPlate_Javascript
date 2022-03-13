@@ -174,3 +174,11 @@ there is no need to import them
 | document.querySelector('.message').style.color = 'red'; | change css style |
 | --- | --- |
 
+### ... operator
+It is similar to * operators for lists in python and is used here for arrays
+Use cases :
+1- print -> console.log(...myArray)
+2. Create shallow copy (copy by value) -> newArray = [...myArray]
+3. create shallow copy of objects -> const newResturant = {...restuarnt}
+4. merging two arrays
+// it can be used for all iterables : arrays, strings, set, maps
