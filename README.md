@@ -145,6 +145,12 @@ const {openningHours, Menue, prices} = resturant  // with the original name
 const {openningHours: op, Menue: me, prices: cost} = resturant  // assigning new names original name
 const {openningHours: op = '12-9', Menue: me = [], prices = []} = resturant  // assigning default value in case one parameters is not defined in the original object -> usefull in objects when passing objects instead of one by one parameters
 
+// mutating variables ( if you want to assign a predefined variable you need parantesis other wise you get error)
+let a = 2
+let b = c
+const obj = {a = 23, b = 34, c = 45};
+({a,b} = obj )
+
 ```
 
 
