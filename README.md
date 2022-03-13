@@ -174,7 +174,7 @@ there is no need to import them
 | document.querySelector('.message').style.color = 'red'; | change css style |
 | --- | --- |
 
-### ... operator and Rest operator
+### ... operator 
 It is similar to * operators for lists in python and is used here for arrays
 Use cases :
 1- print -> console.log(...myArray)
@@ -183,4 +183,8 @@ Use cases :
 4. merging two arrays
 // it can be used for all iterables : arrays, strings, set, maps
 
+### Rest sintax
+
 const (a, b, ...restArray) = [2, 3, 4, 5, 6, 7] // restArray will be = [4, 5, 6, 7]
+it Also works for objects -> const {ab, ...restObjects} = resturants
+it cna be used for functions -> So we can have arbitray number of input variables
