@@ -75,6 +75,8 @@ for (let i = 0 ;i <= 6; i++)
 {
 console.log(`This is the ${i}`);
 }
+for (const item of myArray){}
+for (const [num, item] of myArray.entries(){}
 ```
 
 # Primitive Data Types
