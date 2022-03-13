@@ -24,6 +24,23 @@ var (in older versions)
 ==    | equal with conversions 
 ||    | or 
 &&    | and 
+Logical operators use Any data type, return Any data type
+// Short-circuitting
+console.log(3 || 'Jonas') -> result is 3 -> it retuns the first true value
+it can be used instead of ternary operator as well e.g const geust = resturant.geustNym || 10 
+
+console.log(3 && 'Jonas') -> result is 'Jonas -> it retuns the last true value if all are ture otherwise the first false value
+
+// 0, '', null, undefined are falsi values but if we need to have 0, '' as true values we need to use ?? (it includes only
+Nullish (null and undefined) as falsi values)
+const a =  0 || 10 // result in a= 10 becasue 0 is treated as falsi
+const a = 0 ?? 10 // result in 0
+
+// use logical operator in another way
+a ||= 10 // it keeps a if it is a truely value otherwise set it to 10
+a ??= 10 
+
+
 
 ### Ternary operator
 
