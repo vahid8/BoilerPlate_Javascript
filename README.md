@@ -137,6 +137,17 @@ const [x=2, y=2, z=2] = [8, 9] // here z will be equal to 2
 ```
 
 
+### Deconstructing objects
+
+```
+resturant = {openningHours: '2-10', Menue: ['Hamburger', 'Pizza'], prices : ['10_euro', '12_euro']}
+const {openningHours, Menue, prices} = resturant  // with the original name
+const {openningHours: op, Menue: me, prices: cost} = resturant  // assigning new names original name
+const {openningHours: op = '12-9', Menue: me = [], prices = []} = resturant  // assigning default value in case one parameters is not defined in the original object -> usefull in objects when passing objects instead of one by one parameters
+
+```
+
+
 # DOM (Document Object Model) manupulation
 DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
 there is no need to import them 
