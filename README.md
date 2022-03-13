@@ -140,16 +140,21 @@ const [x=2, y=2, z=2] = [8, 9] // here z will be equal to 2
 ### Deconstructing objects
 
 ```
-resturant = {openningHours: '2-10', Menue: ['Hamburger', 'Pizza'], prices : ['10_euro', '12_euro']}
+resturant = {openningHours: '2-10', Menue: ['Hamburger', 'Pizza'], prices : {Hamburger: '10_euro', Pizza: '12_euro'}}
 const {openningHours, Menue, prices} = resturant  // with the original name
 const {openningHours: op, Menue: me, prices: cost} = resturant  // assigning new names original name
 const {openningHours: op = '12-9', Menue: me = [], prices = []} = resturant  // assigning default value in case one parameters is not defined in the original object -> usefull in objects when passing objects instead of one by one parameters
+const {prices:{Hamburger, Pizza}} // nested objects deconstruction
+console.log(Hamburger, pizza)
 
 // mutating variables ( if you want to assign a predefined variable you need parantesis other wise you get error)
 let a = 2
 let b = c
 const obj = {a = 23, b = 34, c = 45};
 ({a,b} = obj )
+
+// use deconstruction directly in function and thenn you can pass the variables as an object and the order doesnt matter
+function({openningHours, Menue=[]}){}
 
 ```
 
