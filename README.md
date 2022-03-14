@@ -113,6 +113,17 @@ console.log(typeof var)
 | year.indexOf(2000); | get the index of an element |
 | doesExist = year.includes(2000); | check if an element exists |
 
+### Sets
+const mySet = new Set([1,2,3,4])
+conolse log(mySet.size) // Get the length of the set
+console.log(mySet.has(3)) // Check if an element exists in a set
+mySet.add(6) // add an element to a set
+mySet.delete(4) // delete an element
+mySet.clear() // delete all elements inside a set
+// There is no way to access elements in a set in Javascript
+// They are iterable like arrays
+console.log(new Set('jonassmandias').size) // to see how many uniq letters are in a string
+
 
 ### Objects
 ```
