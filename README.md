@@ -82,10 +82,10 @@ const resturants = {
 fri: {openning: 8 , close: 10},
 sat: {openning: 9 , close: 11}
 }
-for (key of Object.keys(resturants)){}
-for (value of Object.values(resturants){}
-for ([key, value] of Objects.entries(resturants){}
-for ([key, {opening_hour, closing_hour}] in Objects.entries(resturants){}
+for (const key of Object.keys(resturants)){}
+for (const value of Object.values(resturants){}
+for (const [key, value] of Objects.entries(resturants){}
+for (const [key, {opening_hour, closing_hour}] in Objects.entries(resturants){}
 
 ```
 
