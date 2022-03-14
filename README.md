@@ -77,6 +77,16 @@ console.log(`This is the ${i}`);
 }
 for (const item of myArray){}
 for (const [num, item] of myArray.entries(){}
+// loop over objects
+const resturants = {
+fri: {openning: 8 , close: 10},
+sat: {openning: 9 , close: 11}
+}
+for (key of Object.keys(resturants)){}
+for (value of Object.values(resturants){}
+for (key, value of Objects.entries(resturants){}
+for (key, {opening_hour, closing_hour} in Objects.entries(resturants){}
+
 ```
 
 # Primitive Data Types
