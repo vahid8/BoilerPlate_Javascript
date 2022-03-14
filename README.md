@@ -84,8 +84,8 @@ sat: {openning: 9 , close: 11}
 }
 for (key of Object.keys(resturants)){}
 for (value of Object.values(resturants){}
-for (key, value of Objects.entries(resturants){}
-for (key, {opening_hour, closing_hour} in Objects.entries(resturants){}
+for ([key, value] of Objects.entries(resturants){}
+for ([key, {opening_hour, closing_hour}] in Objects.entries(resturants){}
 
 ```
 
