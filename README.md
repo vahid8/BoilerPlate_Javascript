@@ -156,7 +156,7 @@ To make a new copy use the below command, However if there is an array or anothe
 const myObjectCopy = Object.assign({},myObject);
 ```
 ### Maps
-// They are like objects but the keys can be also non strings. 
+// They are like objects but the keys can be also non strings.  
 const restourants = new Map(). 
 restourants.set('name', 'Alfred') // adding new key value pair to the map. 
 restourants.set('openning', 8).set('closing', 10) // adding multiple in one line. 
