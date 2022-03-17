@@ -156,15 +156,28 @@ To make a new copy use the below command, However if there is an array or anothe
 const myObjectCopy = Object.assign({},myObject);
 ```
 ### Maps
-// They are like objects but the keys can be also non strings
-const restourants = new Map()
-restourants.set('name', 'Alfred') // adding new key value pair to the map
-restourants.set('openning', 8).set('closing', 10) // adding multiple in one line
-resturants.get('name') // get the value of a key
-resturants.has('name') // check if a key exists
-resturants.delete('name') // delete a key value pair
-resturants.clear() // remove all elements from Map
-resturants.size // get the length of key value pairs
+// They are like objects but the keys can be also non strings. 
+const restourants = new Map(). 
+restourants.set('name', 'Alfred') // adding new key value pair to the map. 
+restourants.set('openning', 8).set('closing', 10) // adding multiple in one line. 
+// Create a new map at once:  
+```
+const resturants = new Map([ 
+['question', 'what is the best programming language ?'],
+[1, 'C'],
+[2, 'Java'],
+[3, 'JavaScript'],
+['correct', 3],
+['true', 'correct ...'],
+['false', 'try again'],
+])
+```
+resturants.get('name') // get the value of a key. 
+resturants.has('name') // check if a key exists. 
+resturants.delete('name') // delete a key value pair. 
+resturants.clear() // remove all elements from Map. 
+resturants.size // get the length of key value pairs. 
+
 
 
 ### Switching variables
