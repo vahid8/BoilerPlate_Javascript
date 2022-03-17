@@ -159,7 +159,7 @@ const myObjectCopy = Object.assign({},myObject);
 // They are like objects but the keys can be also non strings.  
 const restourants = new Map().  
 restourants.set('name', 'Alfred') // adding new key value pair to the map.  
-restourants.set('openning', 8).set('closing', 10) // adding multiple in one line. 
+restourants.set('openning', 8).set('closing', 10) // adding multiple in one line.   
 // Create a new map at once:  
 ```
 const resturants = new Map([ 
@@ -177,6 +177,11 @@ resturants.has('name') // check if a key exists.
 resturants.delete('name') // delete a key value pair. 
 resturants.clear() // remove all elements from Map. 
 resturants.size // get the length of key value pairs. 
+
+// Iterate over it and print only if it is a question
+for(const [key, value] of question){
+if (tytpeof key == 'number')
+}
 
 
 
