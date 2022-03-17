@@ -157,8 +157,8 @@ const myObjectCopy = Object.assign({},myObject);
 ```
 ### Maps
 // They are like objects but the keys can be also non strings.  
-const restourants = new Map(). 
-restourants.set('name', 'Alfred') // adding new key value pair to the map. 
+const restourants = new Map().  
+restourants.set('name', 'Alfred') // adding new key value pair to the map.  
 restourants.set('openning', 8).set('closing', 10) // adding multiple in one line. 
 // Create a new map at once:  
 ```
