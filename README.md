@@ -178,10 +178,16 @@ resturants.delete('name') // delete a key value pair.
 resturants.clear() // remove all elements from Map. 
 resturants.size // get the length of key value pairs. 
 
-// Iterate over it and print only if it is a question
-for(const [key, value] of question){
-if (tytpeof key == 'number')
-}
+// Iterate over it and print only if it is a question   
+for(const [key, value] of question){    
+if (tytpeof key === 'number') console.log(`Answer ${key}: ${value}`);   
+}   
+// Convert map to an array
+console.log([...resturants]);      
+console.log(resturants.entries());       
+console.log(...resturants.keys());    
+console.log(...resturants.values());     
+
 
 
 
