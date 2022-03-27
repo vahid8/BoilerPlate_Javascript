@@ -20,10 +20,11 @@ var (in older versions)
 ### logical operations
 | Operator | Description |
 | --- | --- |
-===   | strict equal 
-==    | equal with conversions 
-||    | or 
-&&    | and 
+===   | strict equal |
+==    | equal with conversions |
+||    | or |
+&&    | and |
+
 Logical operators use Any data type, return Any data type
 // Short-circuitting
 console.log(3 || 'Jonas') -> result is 3 -> it retuns the first true value
