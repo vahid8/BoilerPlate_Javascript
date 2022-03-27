@@ -137,6 +137,7 @@ console.log(typeof var)
 | doesExist = year.includes(2000); | check if an element exists |
 
 #### Sets
+```
 const mySet = new Set([1,2,3,4])
 conolse log(mySet.size) // Get the length of the set
 console.log(mySet.has(3)) // Check if an element exists in a set
@@ -146,6 +147,7 @@ mySet.clear() // delete all elements inside a set
 // There is no way to access elements in a set in Javascript
 // They are iterable like arrays
 console.log(new Set('jonassmandias').size) // to see how many uniq letters are in a string
+```
 
 
 #### Objects
@@ -179,11 +181,11 @@ To make a new copy use the below command, However if there is an array or anothe
 const myObjectCopy = Object.assign({},myObject);
 ```
 #### Maps
-// They are like objects but the keys can be also non strings.  
-const restourants = new Map().  
-restourants.set('name', 'Alfred') // adding new key value pair to the map.  
-restourants.set('openning', 8).set('closing', 10) // adding multiple in one line.   
-// Create a new map at once:  
+// They are like objects but the keys can be also non strings.    
+const restourants = new Map().    
+restourants.set('name', 'Alfred') // adding new key value pair to the map.    
+restourants.set('openning', 8).set('closing', 10) // adding multiple in one line.     
+// Create a new map at once:    
 ```
 const resturants = new Map([ 
 ['question', 'what is the best programming language ?'],
@@ -195,31 +197,36 @@ const resturants = new Map([
 ['false', 'try again'],
 ])
 ```
-resturants.get('name') // get the value of a key. 
-resturants.has('name') // check if a key exists. 
-resturants.delete('name') // delete a key value pair. 
-resturants.clear() // remove all elements from Map. 
-resturants.size // get the length of key value pairs. 
+resturants.get('name') // get the value of a key.     
+resturants.has('name') // check if a key exists.    
+resturants.delete('name') // delete a key value pair.     
+resturants.clear() // remove all elements from Map.     
+resturants.size // get the length of key value pairs.     
 
-// Iterate over it and print only if it is a question   
-for(const [key, value] of question){    
+// Iterate over it and print only if it is a question 
+```
+for(const [key, value] of question){        
 if (tytpeof key === 'number') console.log(`Answer ${key}: ${value}`);   
-}   
+}  
+```
 // Convert map to an array
+```
 console.log([...resturants]);      
 console.log(resturants.entries());       
 console.log(...resturants.keys());    
 console.log(...resturants.values());     
+```
 
 
+<!-- Working with data -->
+### Working with data
 
-
-### Switching variables
+#### Switching variables
 ```
 [a, b] = [b, a]
 ```
 
-### Deconstructing array
+#### Deconstructing array
 
 ```
 const arr = ['apple', 'orrange', 'benana', 'Avocado']
@@ -236,7 +243,7 @@ const [x=2, y=2, z=2] = [8, 9] // here z will be equal to 2
 ```
 
 
-### Deconstructing objects
+#### Deconstructing objects
 
 ```
 resturant = {openningHours: '2-10', Menue: ['Hamburger', 'Pizza'], prices : {Hamburger: '10_euro', Pizza: '12_euro'}}
@@ -257,12 +264,32 @@ function({openningHours, Menue=[]}){}
 
 ```
 
+#### ... operator  (spread operator)
+It is similar to * operators for lists in python and is used here for arrays
+Use cases :
+1- print -> console.log(...myArray)
+2. Create shallow copy (copy by value) -> newArray = [...myArray]
+3. create shallow copy of objects -> const newResturant = {...restuarnt}
+4. merging two arrays
+// it can be used for all iterables : arrays, strings, set, maps
 
-# DOM (Document Object Model) manupulation
+#### Rest 
+const (a, b, ...restArray) = [2, 3, 4, 5, 6, 7] // restArray will be = [4, 5, 6, 7]
+it Also works for objects -> const {ab, ...restObjects} = resturants
+it cna be used for functions -> So we can have arbitray number of input variables
+
+#### Optional chaining
+to prevent error if an object doent have a property, data or method inside
+console.log(resturants.openningHours?.mon?.open) // returns undefined if the open variable is not defined on mon
+console.log(resturants.order?.(0,1)) // returns the result if the method exists otherwise returns None
+
+<!-- DOM manupulation -->
+### DOM (Document Object Model) manupulation
+
 DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
 there is no need to import them 
 
-### selectors
+#### selectors
 | Command | Description |
 | --- | --- |
 | document.querySelector('.message') | select element by class|
@@ -273,21 +300,3 @@ there is no need to import them
 | document.querySelector('.message').style.color = 'red'; | change css style |
 | --- | --- |
 
-### ... operator 
-It is similar to * operators for lists in python and is used here for arrays
-Use cases :
-1- print -> console.log(...myArray)
-2. Create shallow copy (copy by value) -> newArray = [...myArray]
-3. create shallow copy of objects -> const newResturant = {...restuarnt}
-4. merging two arrays
-// it can be used for all iterables : arrays, strings, set, maps
-
-### Rest sintax
-const (a, b, ...restArray) = [2, 3, 4, 5, 6, 7] // restArray will be = [4, 5, 6, 7]
-it Also works for objects -> const {ab, ...restObjects} = resturants
-it cna be used for functions -> So we can have arbitray number of input variables
-
-### Optional chaining
-to prevent error if an object doent have a property, data or method inside
-console.log(resturants.openningHours?.mon?.open) // returns undefined if the open variable is not defined on mon
-console.log(resturants.order?.(0,1)) // returns the result if the method exists otherwise returns None
