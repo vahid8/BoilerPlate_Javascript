@@ -114,16 +114,16 @@ for (const [key, {opening_hour, closing_hour}] in Objects.entries(resturants){}
 
 ### Primitive Data Types
 string, number , boolean
-### type casting
+#### type casting
 String(a)\
 Number(b)
-### check type of variable 
+#### check type of variable 
 ```
 console.log(typeof var)
 ```
 
-# Data Structures
-### Arrays
+### Non-Primitive-built-in Data Types
+#### Arrays
 | Command | Description |
 | --- | --- |
 | const year = [1999,2000,2001] |  Creating array  method 1  |
@@ -136,7 +136,7 @@ console.log(typeof var)
 | year.indexOf(2000); | get the index of an element |
 | doesExist = year.includes(2000); | check if an element exists |
 
-### Sets
+#### Sets
 const mySet = new Set([1,2,3,4])
 conolse log(mySet.size) // Get the length of the set
 console.log(mySet.has(3)) // Check if an element exists in a set
@@ -148,7 +148,7 @@ mySet.clear() // delete all elements inside a set
 console.log(new Set('jonassmandias').size) // to see how many uniq letters are in a string
 
 
-### Objects
+#### Objects
 ```
 const jonas = {
   firstName: "jonas",
@@ -178,7 +178,7 @@ console.log(jonas.goodSalary);
 To make a new copy use the below command, However if there is an array or another object inside it will be copied again by reference and only the first order will be copied by value :
 const myObjectCopy = Object.assign({},myObject);
 ```
-### Maps
+#### Maps
 // They are like objects but the keys can be also non strings.  
 const restourants = new Map().  
 restourants.set('name', 'Alfred') // adding new key value pair to the map.  
