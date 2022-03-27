@@ -22,7 +22,7 @@ var (in older versions)
 | --- | --- |
 ===   | strict equal |
 ==    | equal with conversions |
-||    | or |
+''    | or |
 &&    | and |
 
 Logical operators use Any data type, return Any data type   
