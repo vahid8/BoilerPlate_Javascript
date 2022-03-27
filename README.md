@@ -11,16 +11,10 @@
     <li><a href="#data-structures">Data structures</a>
         <ul>
           <li><a href="#Primitive-Data-Types">Primitive Data Types</a></li>
-          <li><a href="#Non-Primitive-built-in-Data-Types">Non-Primitive-built-in Data Types</a>
-            <ul>
-              <li><a href="#Arrays">Arrays</a></li>
-              <li><a href="#Sets">Sets</a></li>
-            </ul>              
-          </li>
-        </ul>
-      
-    
+          
+        </ul>    
     </li>
+    
     <li><a href="#working-with-data">Working with data</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a></li>
   </ol>
