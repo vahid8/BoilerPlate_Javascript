@@ -8,9 +8,22 @@
     <li><a href="#logical-operations">Logical operations</a></li>
     <li><a href="#functions">Functions</a></li>
     <li><a href="#for-loops">For Loops</a></li>
-    <li><a href="#data-structures">Data structures</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#data-structures">Data structures</a>
+        <ul>
+          <li><a href="#Primitive-Data-Types">Primitive Data Types</a></li>
+          <li><a href="#Non-Primitive-built-in-Data-Types">Non-Primitive-built-in Data Types</a>
+            <ul>
+                  <a href="#Array">Array</a>
+                  <a href="#Sets">Sets</a>
+            </ul>
+              
+          </li>
+        </ul>
+      
+    
+    </li>
+    <li><a href="#working-with-data">Working with data</a></li>
+    <li><a href="#DOM-manupulation">DOM manupulation</a></li>
   </ol>
 </details>
 
@@ -219,14 +232,14 @@ console.log(...resturants.values());
 
 
 <!-- Working with data -->
-### Working with data
+## Working with data
 
-#### Switching variables
+### Switching variables
 ```
 [a, b] = [b, a]
 ```
 
-#### Deconstructing array
+### Deconstructing array
 
 ```
 const arr = ['apple', 'orrange', 'benana', 'Avocado']
@@ -243,7 +256,7 @@ const [x=2, y=2, z=2] = [8, 9] // here z will be equal to 2
 ```
 
 
-#### Deconstructing objects
+### Deconstructing objects
 
 ```
 resturant = {openningHours: '2-10', Menue: ['Hamburger', 'Pizza'], prices : {Hamburger: '10_euro', Pizza: '12_euro'}}
@@ -264,7 +277,7 @@ function({openningHours, Menue=[]}){}
 
 ```
 
-#### ... operator  (spread operator)
+### ... operator  (spread operator)
 It is similar to * operators for lists in python and is used here for arrays
 Use cases :
 1- print -> console.log(...myArray)
@@ -273,7 +286,7 @@ Use cases :
 4. merging two arrays
 // it can be used for all iterables : arrays, strings, set, maps
 
-#### Rest 
+### Rest 
 const (a, b, ...restArray) = [2, 3, 4, 5, 6, 7] // restArray will be = [4, 5, 6, 7]
 it Also works for objects -> const {ab, ...restObjects} = resturants
 it cna be used for functions -> So we can have arbitray number of input variables
@@ -284,12 +297,12 @@ console.log(resturants.openningHours?.mon?.open) // returns undefined if the ope
 console.log(resturants.order?.(0,1)) // returns the result if the method exists otherwise returns None
 
 <!-- DOM manupulation -->
-### DOM (Document Object Model) manupulation
+## DOM (Document Object Model) manupulation
 
 DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
 there is no need to import them 
 
-#### selectors
+### selectors
 | Command | Description |
 | --- | --- |
 | document.querySelector('.message') | select element by class|
