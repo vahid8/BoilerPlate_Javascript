@@ -4,11 +4,11 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#variables-definition">Variables definition</a></li>    
+    <li><a href="#general-notes">General notes</a></li>    
     <li><a href="#logical-operations">Logical operations</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#functions">Functions</a></li>
+    <li><a href="#for-loops">For Loops</a></li>
+    <li><a href="#data-structures">Data structures</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -65,8 +65,9 @@ a ??= 10
 ### Ternary operator
 n >= 20 ? console.log("Tr") : console.log("Fa") Ternary operation
 
-
-### Functions
+<!-- Functions -->
+## Functions
+Different methods of function decleration
 ```
 // function decleration
 function calcAge1(birthYear){
@@ -87,8 +88,9 @@ const calcAge3 = birthYear => {
       return age;
 }
 ```
+<!-- For Loops -->
+## For loops
 
-### For loops
 ```
 for (let i = 0 ;i <= 6; i++)
 {
@@ -107,8 +109,10 @@ for (const [key, value] of Objects.entries(resturants){}
 for (const [key, {opening_hour, closing_hour}] in Objects.entries(resturants){}
 
 ```
+<!-- Data Structures -->
+## Data Structures
 
-# Primitive Data Types
+### Primitive Data Types
 string, number , boolean
 ### type casting
 String(a)\
