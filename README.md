@@ -13,10 +13,9 @@
           <li><a href="#Primitive-Data-Types">Primitive Data Types</a></li>
           <li><a href="#Non-Primitive-built-in-Data-Types">Non-Primitive-built-in Data Types</a>
             <ul>
-                  <a href="#Array">Array</a>
-                  <a href="#Sets">Sets</a>
-            </ul>
-              
+              <li><a href="#Arrays">Arrays</a></li>
+              <li><a href="#Sets">Sets</a></li>
+            </ul>              
           </li>
         </ul>
       
