@@ -25,7 +25,7 @@ var (in older versions)
 ||    | or |
 &&    | and |
 
-Logical operators use Any data type, return Any data type
+Logical operators use Any data type, return Any data type   
 // Short-circuitting
 console.log(3 || 'Jonas') -> result is 3 -> it retuns the first true value
 it can be used instead of ternary operator as well e.g const geust = resturant.geustNym || 10 
