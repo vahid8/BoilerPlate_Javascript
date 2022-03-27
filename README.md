@@ -4,20 +4,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#variables-definition">Variables definition</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#variables-definition">Variables Definition</a></li>    
+    <li><a href="#logical-operations">Logical Operations</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -29,7 +17,7 @@
 
 
 <!-- General Notes -->
-## general notes
+## General notes
 
 Type this line to actiavte strict mode ( it improves debugging)\
 'use strict'
@@ -47,7 +35,10 @@ var (in older versions)
 | String Template Literals (multiple line)| console.log(´My name is : |
 |                                         |    written in two lines´) |
 
-### logical operations
+<!-- Logical Operations -->
+## Logical Operations
+
+### Operators
 | Operator | Description |
 | --- | --- |
 ===   | strict equal |
@@ -55,11 +46,11 @@ var (in older versions)
 ''    | or |
 &&    | and |
 
-Logical operators use Any data type, return Any data type   
-// Short-circuitting    
+Logical operators use Any data type, return Any data type
+
+### Short-circuitting    
 console.log(3 || 'Jonas') -> result is 3 -> it retuns the first true value    
 it can be used instead of ternary operator as well e.g const geust = resturant.geustNym || 10     
-
 console.log(3 && 'Jonas') -> result is 'Jonas -> it retuns the last true value if all are ture otherwise the first false value
 
 // 0, '', null, undefined are falsi values but if we need to have 0, '' as true values we need to use ?? (it includes only
@@ -71,10 +62,7 @@ const a = 0 ?? 10 // result in 0
 a ||= 10 // it keeps a if it is a truely value otherwise set it to 10   
 a ??= 10    
 
-
-
 ### Ternary operator
-
 n >= 20 ? console.log("Tr") : console.log("Fa") Ternary operation
 
 
