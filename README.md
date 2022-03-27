@@ -8,10 +8,7 @@
     <li><a href="#logical-operations">Logical operations</a></li>
     <li><a href="#functions">Functions</a></li>
     <li><a href="#for-loops">For Loops</a></li>
-    <li><a href="#data-structures">Data structures</a>
-  
-    </li>
-    
+    <li><a href="#data-structures">Data structures</a></li>    
     <li><a href="#working-with-data">Working with data</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a></li>
   </ol>
