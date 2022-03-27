@@ -26,9 +26,9 @@ var (in older versions)
 &&    | and |
 
 Logical operators use Any data type, return Any data type   
-// Short-circuitting
-console.log(3 || 'Jonas') -> result is 3 -> it retuns the first true value
-it can be used instead of ternary operator as well e.g const geust = resturant.geustNym || 10 
+// Short-circuitting    
+console.log(3 || 'Jonas') -> result is 3 -> it retuns the first true value    
+it can be used instead of ternary operator as well e.g const geust = resturant.geustNym || 10     
 
 console.log(3 && 'Jonas') -> result is 'Jonas -> it retuns the last true value if all are ture otherwise the first false value
 
