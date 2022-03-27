@@ -4,8 +4,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#variables-definition">Variables Definition</a></li>    
-    <li><a href="#logical-operations">Logical Operations</a></li>
+    <li><a href="#variables-definition">Variables definition</a></li>    
+    <li><a href="#logical-operations">Logical operations</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
