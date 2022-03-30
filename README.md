@@ -8,7 +8,7 @@
     <li><a href="#logical-operations">Logical operations</a></li>
     <li><a href="#functions">Functions</a>
       <ul>
-        <li><a href="#Function-declaration">Function declaration</a><\li>
+        <li><a href="#Function-declaration">Function declaration</a></li>
         <li><a href="#Functions-in-functions">Functions in functions</a></li>
         <li><a href="#Functions-in-objects">Functions in objects</a></li>
         <li><a href="#Bind-applications">Bind application</a></li>
