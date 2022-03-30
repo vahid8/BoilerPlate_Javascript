@@ -295,6 +295,28 @@ console.log(typeof var)
 | year.indexOf(2000); | get the index of an element |
 | doesExist = year.includes(2000); | check if an element exists |
 
+Array methods
+```
+let arr = ["a", "b", "c", "d", "e"];
+arr.slice(2) // will rerturn a new array (copy) with (["c","d","e"])
+arr.slice(2,4);
+arr.slice(-1);
+arr.slice() //create a shallow copy of the array or using ... operator [...arr]
+
+//splice is the same as slice but it changes the original array instead of creating a copy
+
+arr.reverse() // it mutate (change) the original array
+arr.concat(arr2) or [..arr, ..arr2]
+
+att[0] or arr.at(0)
+last element 
+arr[arr.length-1];
+arr.slice(-1)[0]; // cerate a copy of last element
+arr.at(-1);
+at method also works on strings
+```
+
+
 #### Sets
 ```
 const mySet = new Set([1,2,3,4])
@@ -465,4 +487,14 @@ there is no need to import them
 | document.querySelector('#check').addEventListener('click', myFunction()) |  button event handler |
 | document.querySelector('.message').style.color = 'red'; | change css style |
 | --- | --- |
+
+```
+myClassContainer.innerHTML = ''; //empty all txts
+const myContent = '<div class ="movement_row">
+                    im here with ${myVariable}
+                    </div>'
+
+myClassContainer.insertAdjacentHTML('afterbegin', myContent) //add the new content to the innerHTML
+
+```
 
