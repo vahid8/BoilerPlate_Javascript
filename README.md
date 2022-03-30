@@ -6,7 +6,15 @@
   <ol>
     <li><a href="#general-notes">General notes</a></li>    
     <li><a href="#logical-operations">Logical operations</a></li>
-    <li><a href="#functions">Functions</a></li>
+    <li><a href="#functions">Functions</a>
+      <ul>
+        <li><a href="#Function-declaration">Function declaration</a><\li>
+        <li><a href="#Functions-in-functions">Functions in functions</a></li>
+        <li><a href="#Functions-in-objects">Functions in objects</a></li>
+        <li><a href="#Bind-applications">Bind application</a></li>
+        <li><a href="#Notes">Notes</a></li>
+      </ul>
+    </li>
     <li><a href="#for-loops">For Loops</a></li>
     <li><a href="#data-structures">Data structures</a>
         <ul>
@@ -129,7 +137,7 @@ const calcAge3 = birthYear => {
 - Higher ordewr functions: A function that recieves another function as an argument, that return a new function or both   
 - addEventListener are higher order functions.    
 
-### functions in functions
+### Functions in functions
 These are called also higher order functions
 ```
 const greet = function (greeting) {
@@ -144,7 +152,7 @@ greeterHey('Jonas');
 great('Hello')('Jonas');
 ```
 
-### functions inside objects
+### Functions in objects
 1 - use the function directly for the current object
 ```
 lufthansaBooking = {
@@ -197,29 +205,26 @@ const.log(addTax(0.1, 200))
 const addVAT = addTax.bind(null, 0.23); // bind needs an object to pass as the first arg
 console.log(addVAT(200));
 
-// solving the above using functions in funcrtions
+// solving the above using functions in functions
 const addTaxRate = function(rate){
     return function(value){
         return value + value * rate;
     }
 }
-```
-
 
 const addVAT2 = addTaxRate(0.23);
 console.log(addVAT2(200));
-
-
-['vahid', 'jonas', 'Adam'].forEach(myFunction);
-
+```
+### Notes
+```
 // run a function only once , it accepts no input since it is medant to run only once
 // But it can use the global variables
 (()=> console.log("im here"))()
 
 //closures
-VE attached to the function, exactly as it was at the time and place the function was created.
-
+we attached to the function, exactly as it was at the time and place the function was created.
 console.dir(booker); // to see the closures (available variables)
+```
 
 <!-- For Loops -->
 ## For loops
