@@ -10,7 +10,11 @@
     <li><a href="#for-loops">For Loops</a></li>
     <li><a href="#data-structures">Data structures</a>
         <ul>
-          <li><a href="#Primitive-Data-Types">Primitive Data Types</a></li>
+          <li><a href="#Primitive-Data-Types">Primitive Data Types</a>
+           <ul>
+              <li><a href="#String-methods">String-methods</a></li>            
+           </ul>       
+          </li>          
           <li><a href="#Non-Primitive-built-in-Data-Types">Non-Primitive-built-in Data Types</a>
             <ul>
               <li><a href="#Arrays">Arrays</a></li>
@@ -93,6 +97,7 @@ n >= 20 ? console.log("Tr") : console.log("Fa") Ternary operation
 
 <!-- Functions -->
 ## Functions
+### Functions declaration
 Different methods of function decleration
 ```
 // function decleration
@@ -114,6 +119,108 @@ const calcAge3 = birthYear => {
       return age;
 }
 ```
+
+- functions will not change the primitive values    
+- objects will be changed via passing into functions    
+- There is no passing by value or refrence concept in javascript. Everything is passed by value.    
+- functions are just another type of objects    
+- functions have also properties and methods e,g myFunction.name  -> it will return name of the function    
+- First order functions: javascript treat functions as first-class citizens    
+- Higher ordewr functions: A function that recieves another function as an argument, that return a new function or both   
+- addEventListener are higher order functions.    
+
+### functions in functions
+These are called also higher order functions
+```
+const greet = function (greeting) {
+    return function (name) {
+        console.log('${greeting} ${name}`);
+    };
+};
+
+const greeterHey = greet('Hey');
+greeterHey('Jonas');
+//or
+great('Hello')('Jonas');
+```
+
+### functions inside objects
+1 - use the function directly for the current object
+```
+lufthansaBooking = {
+    airline: "Luftansa",
+    iataCode: "LF",
+    bookings: [],
+    function book(flightNum, name){
+        booking.push(`${name} has booked the flight ${name}
+        in the ${this.airline}.`);
+    }
+}
+
+lufthansaBooking.book(583, "vahid");
+```
+2 - use the function from one object for another object (apply or call)
+```
+const swiss = {
+    airline: "swiss air lines",
+    iataCode: "LX",
+    bookings: [],
+}
+const book = lufthansaBooking.book
+book.call(swiss, 583, "vahid"); // swiss object will be used in phrases with this
+// or
+const flightData = [583, "Vahid"];
+book.apply(swiss, flightData);
+// or
+book.call(swiss, ...flightData)
+```
+3 - copy the function from one object to another (bind)   
+you can use the function directly after binding   
+```
+const bookEw = book.bind(swiss);
+bookEW(23,"vahid")
+// or specify even paramters
+const bookEw = book.bind(swiss, 23);
+bookEW("vahid");
+```
+### Bind applications
+1 - bind in addEventListener -> why ? because the listner will pass the selected class (btn) as the object (to be used for this keyword) to the function   
+// To pass our own object we need to use bind   
+document.querySelector('.buy').addEventListener('click', Luftansa.buyPlane.bind(Luftansa))    
+
+2 - use bind for partial application    
+```
+const addTax = (rate, value) => value + value * rate;   
+const.log(addTax(0.1, 200))   
+
+// fix the rate value and use the new function
+const addVAT = addTax.bind(null, 0.23); // bind needs an object to pass as the first arg
+console.log(addVAT(200));
+
+// solving the above using functions in funcrtions
+const addTaxRate = function(rate){
+    return function(value){
+        return value + value * rate;
+    }
+}
+```
+
+
+const addVAT2 = addTaxRate(0.23);
+console.log(addVAT2(200));
+
+
+['vahid', 'jonas', 'Adam'].forEach(myFunction);
+
+// run a function only once , it accepts no input since it is medant to run only once
+// But it can use the global variables
+(()=> console.log("im here"))()
+
+//closures
+VE attached to the function, exactly as it was at the time and place the function was created.
+
+console.dir(booker); // to see the closures (available variables)
+
 <!-- For Loops -->
 ## For loops
 
@@ -324,6 +431,13 @@ Use cases :
 const (a, b, ...restArray) = [2, 3, 4, 5, 6, 7] // restArray will be = [4, 5, 6, 7]
 it Also works for objects -> const {ab, ...restObjects} = resturants
 it cna be used for functions -> So we can have arbitray number of input variables
+
+```
+const upperFirstWord = function (str) {
+    const [first, ...others] = str.split(' ');
+    return [first.toUppercase(), ...others].join(' ');
+}
+```
 
 #### Optional chaining
 to prevent error if an object dosent have a property, data or method inside
