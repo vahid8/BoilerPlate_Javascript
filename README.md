@@ -43,6 +43,11 @@
         <li><a href="#...-Operator">... Operator</a></li>          
         <li><a href="#Rest">Rest</a></li>
         <li><a href="#Optional-chaining">Optional chaining</a></li>
+        <li><a href="#Find-method">Find method</a></li>
+        <li><a href="#Some-method">Some method</a></li>
+        <li><a href="#Flat-method">Flat method</a></li>
+        <li><a href="#sort-method">Sort method</a></li>
+        <li><a href="#Array-from">Array from</a></li>
       </ul> 
     </li>    
     <li><a href="#DOM-manupulation">DOM manupulation</a>
@@ -302,6 +307,8 @@ console.log(typeof var)
 | --- | --- |
 | const year = [1999,2000,2001] |  Creating array  method 1  |
 | const year = new Array(1999,2000,2001) |  Creating array  method 2  |
+| const year = new Array(7) |  create an empty array with 7 elements |
+|  x.fill(1) | fill the empty array with 1 |
 | console.log(year.length); | Get the length |
 | year.push(2002); | appending element to array |
 | year.unshift(1998); | Insert element at the beginning |
@@ -485,6 +492,58 @@ const upperFirstWord = function (str) {
 to prevent error if an object dosent have a property, data or method inside
 console.log(resturants.openningHours?.mon?.open) // returns undefined if the open variable is not defined on mon
 console.log(resturants.order?.(0,1)) // returns the result if the method exists otherwise returns None
+
+#### Find method
+- find or findIndex works similar but the latter gives the index isntead of value
+```
+const firstWithdrawal = myArray.find(item => item <0 )    
+// It finds the first negative elenment and return the value
+or searching in objects (usefull for logins)
+const account = accounts.find(acc => acc.owner === 'Jessica Davis')
+```
+#### Some method
+```
+some (is there any) and every method (are all elements)
+it return Booleans
+console.log(myArray.some(item => item > 0)); return true if at least 1 positive value exist
+console.log(myArray.every(item => item > 0)); return true if all elements are positive value
+```
+
+#### Flat method
+```
+// flat and flatMap to handle nested Arrays
+myArray.flat(); //like np.flatten() only goes one level depth array of Arrays
+myArray.flat(2); // it will flat till 2 levels [[[]]]
+
+flatMap combines the map and flta -> do the mapping at do the flat at the end
+accounts.flatMap(acc => acc.movements)
+```
+
+#### Sort method
+```
+myArray.sort() // it sorts the array based on strings
+//for sorting umbers we need to define the rule in a cvallback function
+myArray.sort((a,b) => {
+    if (a > b) return 1;
+    if (b > a) return -1;
+})
+```
+#### Array from
+```
+// create Array from others method
+const y = Array.from({length: 7}, () => 1); using call back to create and fill the elem,ents at one step
+const z = Array.from({length: 7}, (_,i) => i+1); //will create [1,2,3,4,5,6,7]
+
+// get all values from ui into arrows
+labelBalance.addEventListener('click', function () {
+    const myArray = Array.from(
+        document.querySelectorAll('.movements_value'),
+        item => Number(item.textContent)  Do the mapping for each element to convert them to Number
+    )
+})
+```
+
+
 
 <!-- DOM manupulation -->
 ## DOM (Document Object Model) manupulation
