@@ -31,14 +31,12 @@
         <li><a href="#Rest">Rest</a></li>
         <li><a href="#Optional-chaining">Optional chaining</a></li>
       </ul> 
-    </li>
-    
+    </li>    
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
         <li><a href="#Selectors">Selectors</a></li>       
       </ul>    
-    </li>
-    
+    </li>    
   </ol>
 </details>
 
