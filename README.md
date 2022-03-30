@@ -21,7 +21,7 @@
           </li>
         </ul>  
     </li>    
-    <li><a href="#working-with-data">Working with data</a></li>
+    <li><a href="#working-with-data">Working with data</a>
       <ul>
         <li><a href="#Switching-variables">Switching variables</a></li>
         <li><a href="#Deconstructing-array">Deconstructing array</a></li>
@@ -30,7 +30,8 @@
         <li><a href="#...-Operator">... Operator</a></li>          
         <li><a href="#Rest">Rest</a></li>
         <li><a href="#Optional-chaining">Optional chaining</a></li>
-      </ul>     
+      </ul> 
+    </li>
     
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
