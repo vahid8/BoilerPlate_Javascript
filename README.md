@@ -15,12 +15,29 @@
             <ul>
               <li><a href="#Arrays">Arrays</a></li>
               <li><a href="#Sets">Sets</a></li>
+              <li><a href="#Objects">Objects</a></li>
+              <li><a href="#Maps">Maps</a></li>
             </ul>              
           </li>
         </ul>  
     </li>    
     <li><a href="#working-with-data">Working with data</a></li>
-    <li><a href="#DOM-manupulation">DOM manupulation</a></li>
+      <ul>
+        <li><a href="#Switching-variables">Switching variables</a></li>
+        <li><a href="#Deconstructing-array">Deconstructing array</a></li>
+        <li><a href="#Deconstructing-objects">Deconstructing objects</a></li>
+        <li><a href="#Maps">Maps</a></li>
+        <li><a href="#...-Operator">... Operator</a></li>          
+        <li><a href="#Rest">Rest</a></li>
+        <li><a href="#Optional-chaining">Optional chaining</a></li>
+      </ul>     
+    
+    <li><a href="#DOM-manupulation">DOM manupulation</a>
+      <ul>
+        <li><a href="#Selectors">Selectors</a></li>       
+      </ul>    
+    </li>
+    
   </ol>
 </details>
 
@@ -274,7 +291,7 @@ function({openningHours, Menue=[]}){}
 
 ```
 
-### ... operator  (spread operator)
+### ... Operator  (spread operator)
 It is similar to * operators for lists in python and is used here for arrays
 Use cases :
 1- print -> console.log(...myArray)
@@ -289,7 +306,7 @@ it Also works for objects -> const {ab, ...restObjects} = resturants
 it cna be used for functions -> So we can have arbitray number of input variables
 
 #### Optional chaining
-to prevent error if an object doent have a property, data or method inside
+to prevent error if an object dosent have a property, data or method inside
 console.log(resturants.openningHours?.mon?.open) // returns undefined if the open variable is not defined on mon
 console.log(resturants.order?.(0,1)) // returns the result if the method exists otherwise returns None
 
@@ -299,7 +316,7 @@ console.log(resturants.order?.(0,1)) // returns the result if the method exists 
 DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
 there is no need to import them 
 
-### selectors
+### Selectors
 | Command | Description |
 | --- | --- |
 | document.querySelector('.message') | select element by class|
