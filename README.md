@@ -143,10 +143,31 @@ string, number , boolean
 #### type casting
 String(a)\
 Number(b)
+
 #### check type of variable 
 ```
 console.log(typeof var)
 ```
+#### String methods
+| Command | Description |
+| --- | --- |
+| const airline = 'A323 portugal airlines' |  Creating a string  |
+| airline.indexOf("p") |  find all the occurance of a letter  |
+| airline.lastIndexOf("p") |find the last occurance of a letter|
+| airline.slice(5) | result will be portugal airlines|
+| airline.slice(5, 13) | result will be portugal|
+| airline.toLowerCase() | --- |
+| airline.toUppercase() | --- |
+| airline.trim() | rermove spaces from the string |
+| airline.replace("p", "q") | replace first p with q |
+| airline.replace(/p/g, 'q') | replace all occurance of p with q using regular expressions |
+| airline.split(" ") | split the string|
+| ["I", "am", "here"].join(" ") | --- |
+| airline.includes('portugal') | returns Boolean
+| airline.startsWith('A32') | returns Boolean
+| airline.endWidth('portugal') | returns Boolean
+| padEnd() and padStart() , ... | Other methods are available as well |
+
 
 ### Non-Primitive-built-in Data Types
 #### Arrays
