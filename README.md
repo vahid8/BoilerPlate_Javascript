@@ -12,6 +12,7 @@
         <li><a href="#Functions-in-functions">Functions in functions</a></li>
         <li><a href="#Functions-in-objects">Functions in objects</a></li>
         <li><a href="#Bind-applications">Bind application</a></li>
+        <li><a href="#Functional-programming">Functional programming</a></li>
         <li><a href="#Notes">Notes</a></li>
       </ul>
     </li>
@@ -215,6 +216,20 @@ const addTaxRate = function(rate){
 const addVAT2 = addTaxRate(0.23);
 console.log(addVAT2(200));
 ```
+### Functional programming
+// Map filter and reduce create a new array but forEach will not create   
+```
+const mySecondArray = myArray.map(function(item){return item *10})
+or 
+const mySecondArray = myArray.map(item => item *10)
+
+const mySecondArray = myArray.filter(function(item){return item > 0 });
+or 
+const mySecondArray = myArray.filter(item => item > 0 );
+
+const balance = myArray.reduce(function(accumulator, curr, i, arr){return accumulator + curr;}, 0); // last 0 is the initial value of the accumulator
+```
+
 ### Notes
 ```
 // run a function only once , it accepts no input since it is medant to run only once
