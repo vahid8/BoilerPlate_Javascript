@@ -488,6 +488,7 @@ there is no need to import them
 | document.querySelector('.message').style.color = 'red'; | change css style |
 | --- | --- |
 
+- DOM add elements
 ```
 myClassContainer.innerHTML = ''; //empty all txts
 const myContent = '<div class ="movement_row">
@@ -495,6 +496,13 @@ const myContent = '<div class ="movement_row">
                     </div>'
 
 myClassContainer.insertAdjacentHTML('afterbegin', myContent) //add the new content to the innerHTML
+```
 
+- DOM addEventListener
+```
+btnLogin.addEventListener('click', function(e)){
+    //prevent form from submitting ( refreshing the page)
+    e.preventDefault();
+}
 ```
 
