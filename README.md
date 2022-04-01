@@ -21,7 +21,9 @@
         <ul>
           <li><a href="#Primitive-Data-Types">Primitive Data Types</a>
            <ul>
-              <li><a href="#String-methods">String-methods</a></li>            
+             <li><a href="#Working-with-primitive-data">Working with primitive data</a></li>
+              <li><a href="#String-methods">String methods</a></li>   
+              <li><a href="#Math-methods">Math methods</a></li>   
            </ul>       
           </li>          
           <li><a href="#Non-Primitive-built-in-Data-Types">Non-Primitive-built-in Data Types</a>
@@ -63,8 +65,8 @@
 <!-- General Notes -->
 ## General notes
 
-Type this line to actiavte strict mode ( it improves debugging)\
-'use strict'
+'use strict' :Type this line to actiavte strict mode ( it improves debugging)   
+boxing concept: using () around primitives will convert them to objects so we can apply methods on them e.g (2.7356).ToFixed(2)   
 
 ### variables definition
 ```
@@ -276,10 +278,32 @@ string, number , boolean
 String(a)\
 Number(b)
 
-#### check type of variable 
+
+#### Working with primitive data
 ```
-console.log(typeof var)
+console.log(typeof var) \\ check type of data
+numbers are saved as binary base
+console.log(0.1 +0.2) // result 0.30000000000000004
+convert string to number  
+Number('23')
+or 
++'23'
+//parsing
+Number.parseInt('30px') // result  30
+Number.parseFloat('2.5rem') // result 2.5
+
+//check if value is Nan
+Number.isNan(20) //false
+Number.isNan('20') //false
+Number.isNan(+'20X) //true
+
+//Checking if value is number
+Number.isFinite(20) //true
+Number.isFinite('20') //false
+Number.isFinite(+'20X) //false
+Number.isFinite(23/0) //false
 ```
+
 #### String methods
 | Command | Description |
 | --- | --- |
@@ -299,6 +323,20 @@ console.log(typeof var)
 | airline.startsWith('A32') | returns Boolean
 | airline.endWidth('portugal') | returns Boolean
 | padEnd() and padStart() , ... | Other methods are available as well |
+
+#### Math methods
+| Command | Description |
+| --- | --- |
+| Math.sqrt() | --- |
+| Math.max(5,18,23,'45') | result 45 |
+| Math.min() | --- |
+| Math.PI | --- |
+| Math.random() | create random between 0 and 1 |
+| Math.trunc() | remove the decimal part |
+| Math.round() | round to the closest Int |
+| Math.ceil() | round to the upper Int |
+| Math.floor() | round to the lower Int |
+| (2.73456).toFixed(2) | round up to 2 decimal returns a string |
 
 
 ### Non-Primitive-built-in Data Types
