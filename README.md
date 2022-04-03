@@ -52,6 +52,7 @@
         <li><a href="#Array-from">Array from</a></li>
       </ul> 
     </li>    
+    <li><a href="#Dates">Dates</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
         <li><a href="#Selectors">Selectors</a></li>       
@@ -586,6 +587,38 @@ labelBalance.addEventListener('click', function () {
 })
 ```
 
+<!-- Dates -->
+## Dates
+### Create Dates
+| Command | Description |
+| --- | --- |
+| const now = new Date() | get current dates |
+| new Date ('Aug 02 2020 18:05:41') | create from known string date |
+| new Date ('December 24, 2015') | Another way to create |
+| new Date(2022, 10, 19, 15, 23) | Thu Nov 19 2037 15:23:00 // month are zero based -> dec = 11 |
+
+### Extract data from Date object
+| Command | Description |
+| --- | --- |
+| myTime.getFullYear() | get the year |
+| myTime.getMonth() | get the montgh |
+| myTime.getDate() | get the day of month |
+| myTime.getDay() | get the day of week |
+| myTime.getHours() | get hour |
+| myTime.getMinutes() | get minute |
+| myTime.getSeconds() | get second |
+| myTime.toISOString() | convert to international format |
+| const timePassed = myTime.getTime() | time passed from myTime in mili second |
+| new Date(timePassed) | convert from milisecond to Date format |
+
+### change Date object
+For all above methodes there is a set method as well e.g:     
+myTime.setFullYear(2023) // set the year to 2023
+
+### Date operations
+convert the Date to Number (result will be in millisecond) and do the operations and convert the result back to Date format
+
+
 
 
 <!-- DOM manupulation -->
@@ -603,7 +636,7 @@ there is no need to import them
 | let value = document.querySelector('#myInput').value; | Get the value of an input element (e.g typed bu user) |
 | document.querySelector('#check').addEventListener('click', myFunction()) |  button event handler |
 | document.querySelector('.message').style.color = 'red'; | change css style |
-| --- | --- |
+
 
 - DOM add elements
 ```
