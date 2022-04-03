@@ -291,6 +291,11 @@ or
 //parsing
 Number.parseInt('30px') // result  30
 Number.parseFloat('2.5rem') // result 2.5
+// Numeric Seperator
+const diameter = 287_460_000_000; //increase code redaibily (javascript skip _ sign)
+// BigInt
+maximum number that javascript can handle is 2**53 -1 
+if you have bigger numbers use BigInt(theNumebr) or theNumbern syntax
 
 //check if value is Nan
 Number.isNan(20) //false
