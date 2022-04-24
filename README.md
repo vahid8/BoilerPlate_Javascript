@@ -638,11 +638,12 @@ there is no need to import them
 | document.querySelector('#message') |  select element by id |
 | document.getElementById('message') |  select element by id |
 | document.getElementsByTagName('button') | select all buttons in html (returns Html collection (updates with Dom change)) |
+
+### Editors
 | --- | --- |
 | let txt = document.querySelector('#message').textContent; |  Get content of html element |
 | let value = document.querySelector('#myInput').value; | Get the value of an input element (e.g typed bu user) |
 | document.querySelector('#check').addEventListener('click', myFunction()) |  button event handler |
-| document.querySelector('.message').style.color = 'red'; | change css style |
 | header.prepend(message) | add element as the first child of the header element |
 | header.append(message) | add element as the last child of the header element |
 | header.before(message) | add element before the header element as a sibling|
@@ -650,7 +651,16 @@ there is no need to import them
 | message.remove() | remove selected element from DOM |
 | message.cloneNode(true) | copy the element with its children so we can insert it somewhere else in the dom |
 
-
+### Styles & attributes
+| --- | --- |
+| document.querySelector('.message').style.color = 'red'; | change css style (creates inline style) |
+| console.log(message.style.color) | get the inline style (it cant get hidden styles) |
+| console.log(getComputedStyle(message).backgroundColor) | we can get all hidden and inline styles |
+| myImage.src | show the source of the image |
+| myImage.alt | show the alt of the image |
+| myImage.className | show the class of my image |
+| myImage.getAttribute('designer') |  to get a custom attribute from DOM (<img class= ... src=... alt=... designer="vahid") |
+| myImage.setAttribute('designer', 'saeed') |  to set a custom attribute  |
 
 - DOM add elements
 ```
