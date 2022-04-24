@@ -630,12 +630,26 @@ there is no need to import them
 ### Selectors
 | Command | Description |
 | --- | --- |
-| document.querySelector('.message') | select element by class|
+| document.documentElement | select Entire Html |
+| document.head | Select header element |
+| document.body | select body element
+| document.querySelector('.message') | select first element with this class |
+| document.querySelectorAll('.message') | select all elements with this class (returns node list)|
 | document.querySelector('#message') |  select element by id |
+| document.getElementById('message') |  select element by id |
+| document.getElementsByTagName('button') | select all buttons in html (returns Html collection (updates with Dom change)) |
+| --- | --- |
 | let txt = document.querySelector('#message').textContent; |  Get content of html element |
 | let value = document.querySelector('#myInput').value; | Get the value of an input element (e.g typed bu user) |
 | document.querySelector('#check').addEventListener('click', myFunction()) |  button event handler |
 | document.querySelector('.message').style.color = 'red'; | change css style |
+| header.prepend(message) | add element as the first child of the header element |
+| header.append(message) | add element as the last child of the header element |
+| header.before(message) | add element before the header element as a sibling|
+| header.after(message) | add element after the header element as a sibling |
+| message.remove() | remove selected element from DOM |
+| message.cloneNode(true) | copy the element with its children so we can insert it somewhere else in the dom |
+
 
 
 - DOM add elements
@@ -646,6 +660,22 @@ const myContent = '<div class ="movement_row">
                     </div>'
 
 myClassContainer.insertAdjacentHTML('afterbegin', myContent) //add the new content to the innerHTML
+```
+
+- DOM create, insert and remove element
+```
+const message = document.createElement('div'); // create a div element
+message.classList.add('cookie-message'); // add a class from style.css to the element
+message.innerHTML = ' we use cookies for improvement. <button class ='btn btn-close-cookie"> Got it! <button>;
+
+const header = document.querySelector('.header')
+header.prepend(message) or header.append(message)
+
+document.querySelector('.btn-close-cookie').addEventListener('click', function() {
+message.remove(); // new method to remove
+// message.parentElement.removeChild(message); // the old way to do it
+})
+
 ```
 
 - DOM addEventListener
