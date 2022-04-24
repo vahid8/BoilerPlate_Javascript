@@ -677,6 +677,20 @@ there is no need to import them
 | logo.classList.toggle("myClass") | --- |
 | logo.classList.contains("myClass") | --- | 
 
+- Scrolling
+```
+old method: 
+window.scrollTo(
+const s1coords = section1.getBoundingClientRect();
+window.scrollTo({
+      left: s1coords.left + window.pageXOffset,
+      top: s1coords.top + window.pageYOffset,
+      behavior: 'smooth',
+});
+
+new method:
+secion1.scrollIntoView({behavior: 'smooth' })
+```
 
 - DOM add elements
 ```
