@@ -661,6 +661,16 @@ there is no need to import them
 | myImage.className | show the class of my image |
 | myImage.getAttribute('designer') |  to get a custom attribute from DOM (<img class= ... src=... alt=... designer="vahid") |
 | myImage.setAttribute('designer', 'saeed') |  to set a custom attribute  |
+| myImage.dataset.versionNumber | A new way to atttch and get data from html DOM (<img class= ... src=... dataset-version-number="1.2.3") |
+| (Note for above) dataset object in JS | in DOM it should always start with keyword dataset | 
+
+### classes
+| --- | --- |
+logo.classList.add("y-btn", "myClass"); | add some classes to the element
+logo.classList.remove("myClass"); | remove some classes from element
+logo.classList.toggle("myClass"); | --- |
+logo.classList.contains("myClass"); | --- | 
+
 
 - DOM add elements
 ```
