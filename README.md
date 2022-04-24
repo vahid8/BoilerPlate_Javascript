@@ -56,10 +56,9 @@
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
         <li><a href="#Selectors">Selectors</a></li> 
-        <li><a href="#Editors">Selectors</a></li>
-        <li><a href="#Styles-&-attributes">Selectors</a></li>
-        <li><a href="#Classes">Selectors</a></li>
-        
+        <li><a href="#Editors">Editors</a></li>
+        <li><a href="#Styles-&-attributes">Styles & attributes</a></li>
+        <li><a href="#Classes">Classes</a></li>        
       </ul>    
     </li>    
   </ol>
