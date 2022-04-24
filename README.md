@@ -55,7 +55,11 @@
     <li><a href="#Dates">Dates</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
-        <li><a href="#Selectors">Selectors</a></li>       
+        <li><a href="#Selectors">Selectors</a></li> 
+        <li><a href="#Editors">Selectors</a></li>
+        <li><a href="#Styles-&-attributes">Selectors</a></li>
+        <li><a href="#Classes">Selectors</a></li>
+        
       </ul>    
     </li>    
   </ol>
@@ -622,7 +626,7 @@ convert the Date to Number (result will be in millisecond) and do the operations
 
 
 <!-- DOM manupulation -->
-## DOM (Document Object Model) manupulation
+## DOM manupulation
 
 DOM methods and properties like Timer, Fetch  are not part of JS and are APIs provided by browsers
 there is no need to import them 
@@ -640,9 +644,10 @@ there is no need to import them
 | document.getElementsByTagName('button') | select all buttons in html (returns Html collection (updates with Dom change)) |
 
 ### Editors
+| Command | Description |
 | --- | --- |
-| let txt = document.querySelector('#message').textContent; |  Get content of html element |
-| let value = document.querySelector('#myInput').value; | Get the value of an input element (e.g typed bu user) |
+| let txt = document.querySelector('#message').textContent |  Get content of html element |
+| let value = document.querySelector('#myInput').value | Get the value of an input element (e.g typed bu user) |
 | document.querySelector('#check').addEventListener('click', myFunction()) |  button event handler |
 | header.prepend(message) | add element as the first child of the header element |
 | header.append(message) | add element as the last child of the header element |
@@ -652,6 +657,7 @@ there is no need to import them
 | message.cloneNode(true) | copy the element with its children so we can insert it somewhere else in the dom |
 
 ### Styles & attributes
+| Command | Description |
 | --- | --- |
 | document.querySelector('.message').style.color = 'red'; | change css style (creates inline style) |
 | console.log(message.style.color) | get the inline style (it cant get hidden styles) |
@@ -665,11 +671,12 @@ there is no need to import them
 | (Note for above) dataset object in JS | in DOM it should always start with keyword dataset | 
 
 ### classes
+| Command | Description |
 | --- | --- |
-logo.classList.add("y-btn", "myClass"); | add some classes to the element
-logo.classList.remove("myClass"); | remove some classes from element
-logo.classList.toggle("myClass"); | --- |
-logo.classList.contains("myClass"); | --- | 
+| logo.classList.add("y-btn", "myClass") | add some classes to the element
+| logo.classList.remove("myClass") | remove some classes from element
+| logo.classList.toggle("myClass") | --- |
+| logo.classList.contains("myClass") | --- | 
 
 
 - DOM add elements
