@@ -718,11 +718,41 @@ message.remove(); // new method to remove
 
 ```
 
-- DOM addEventListener
+- DOM addEventListener (list of all events on mdn javascript events)
 ```
 btnLogin.addEventListener('click', function(e)){
     //prevent form from submitting ( refreshing the page)
     e.preventDefault();
 }
+
+// Add event for mouse enter an element zone
+// method 1:
+const h1 = document.querySelector('h1');
+h1.addEventListener('mouseenter', function(e){
+  conosle.log("im in h1 zone now");
+});
+
+// method 2: old way of doing this
+h1.onmouseenter = function(e) {
+  console.log("im in h1 zone")
+}
+// method 1 is better : 
+// a - we can define multiple functions for the same event and run all of them
+// b - we can disable or remove the event handler easily
+// example of how to remove event handler e.g after one time run or a certain time has passed
+const myFunction = function(e) {
+  console.log("im here in h1 zone")
+  h1.removeEventListener('mouseenter', myDunction);
+  }
+h1.addEventListener('mouseenter', myFunction);
+// or setTimeout(() => h1.removeEventListener('mouseenter', myDunction), 3000);
+
+// difference between e.target and e.currentTarget
+e.target is the elemnt that is triggered
+e.currentTarget is the current place that the eventhandler function is triggered
+They are normally the same unless you define an eventhandler on a class that is on the parrent element and you click on the child
+element. the event will propagte from child to parent so the e.target is on the selected element (child) and currenttarget is on the parent
+elemnt taht has the eventlistener function.
+
 ```
 
