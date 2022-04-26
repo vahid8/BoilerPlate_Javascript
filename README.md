@@ -636,11 +636,14 @@ there is no need to import them
 | document.documentElement | select Entire Html |
 | document.head | Select header element |
 | document.body | select body element
-| document.querySelector('.message') | select first element with this class |
+| const message = document.querySelector('.message') | select first element with this class |
+| messgae.querySelectorAll('.highlight) | select all child elemnets of messsage class with class highlight |
 | document.querySelectorAll('.message') | select all elements with this class (returns node list)|
 | document.querySelector('#message') |  select element by id |
 | document.getElementById('message') |  select element by id |
 | document.getElementsByTagName('button') | select all buttons in html (returns Html collection (updates with Dom change)) |
+| const h1 = document.querySelector('h1') | selectfirst h1 element |
+
 
 ### Editors
 | Command | Description |
@@ -753,6 +756,10 @@ e.currentTarget is the current place that the eventhandler function is triggered
 They are normally the same unless you define an eventhandler on a class that is on the parrent element and you click on the child
 element. the event will propagte from child to parent so the e.target is on the selected element (child) and currenttarget is on the parent
 elemnt taht has the eventlistener function.
+
+// Event deligation
+// Instead of applying the same function on many sibling childs, select the parant child and use e.target and the name of class to add eventListener 
+// to all of them once. It will be very usefull technique to add eventlistener to childs that do not exist yet but will be created after loading the page.
 
 ```
 
