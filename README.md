@@ -642,7 +642,16 @@ there is no need to import them
 | document.querySelector('#message') |  select element by id |
 | document.getElementById('message') |  select element by id |
 | document.getElementsByTagName('button') | select all buttons in html (returns Html collection (updates with Dom change)) |
-| const h1 = document.querySelector('h1') | selectfirst h1 element |
+| const h1 = document.querySelector('h1') | select first h1 element in the document |
+| h1.firstElementChild | select first h1 element child |
+| h1.lastElementChild | select last h1 element child |
+| h1.childNodes | select all child things (texts comments, ...) |
+| h1.children | select all direct child elements (live elements) |
+| h1.parentNode |  select all parent things (texts comments, ...) |
+| h1.parentElement | select all direct parent elements (live elements) |
+| h1.closest('.header') | select closest h1 parent element with the class header (it queryselect all parents of the element) |
+| h1.previusElementSibling | select previus element |
+| h1.nextElementSibling | select next element |
 
 
 ### Editors
