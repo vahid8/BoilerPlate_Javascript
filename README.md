@@ -693,7 +693,7 @@ there is no need to import them
 ```
 old method: 
 window.scrollTo(
-const s1coords = section1.getBoundingClientRect();
+const s1coords = section1.getBoundingClientRect(); // Get the global coordinates of an element
 window.scrollTo({
       left: s1coords.left + window.pageXOffset,
       top: s1coords.top + window.pageYOffset,
