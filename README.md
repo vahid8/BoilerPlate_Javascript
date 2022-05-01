@@ -771,4 +771,14 @@ elemnt taht has the eventlistener function.
 // to all of them once. It will be very usefull technique to add eventlistener to childs that do not exist yet but will be created after loading the page.
 
 ```
+### DOM EVENTS
+```
+1- document.addEventListener('DOMContentLoaded', function(e) {console.log('HTML parsed and DOM tree built', e)}); 
+2- document.addEventListener('load', function(e) {console.log('page fully loaded', e)});
+3- window.addEventListener('beforeunload', function (e) {
+                            e.preventDefault();
+                            e.returnValue = '';
+                            }); ---> create alert if user wants to close the window
+```
+
 
