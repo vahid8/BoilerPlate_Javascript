@@ -53,7 +53,7 @@
       </ul> 
     </li>    
     <li><a href="#Dates">Dates</a></li>
-    <li><a href="#OOP">Dates</a></li>
+    <li><a href="#OOP">OOP</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
         <li><a href="#Selectors">Selectors</a></li> 
