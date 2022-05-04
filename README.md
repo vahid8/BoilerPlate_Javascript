@@ -53,6 +53,7 @@
       </ul> 
     </li>    
     <li><a href="#Dates">Dates</a></li>
+    <li><a href="#OOP">Dates</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
         <li><a href="#Selectors">Selectors</a></li> 
@@ -621,6 +622,26 @@ myTime.setFullYear(2023) // set the year to 2023
 ### Date operations
 convert the Date to Number (result will be in millisecond) and do the operations and convert the result back to Date format
 
+
+<!-- OOP -->
+## OOP
+1- Define class using constructor functions and new Operator
+```
+const Person = function(firstName, birthYear){
+                this.firstName = firstName;
+                this.birthYear = birthYear;
+
+const vahid = new Person('vahid',1990);
+console.log(vahid instanceof Person);
+```
+2- Prototype: add method to objects
+```
+Person.prototype.calcAge = function(){
+  console.log(2037 - this.birthYear);
+}
+vahid.calcAge();
+console.log(vahid.__proto__);
+```
 
 
 
