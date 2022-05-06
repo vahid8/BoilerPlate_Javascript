@@ -257,12 +257,23 @@ console.dir(booker); // to see the closures (available variables)
 ## For loops
 
 ```
+/////// simple one 
 for (let i = 0 ;i <= 6; i++)
 {
 console.log(`This is the ${i}`);
 }
+
+///// enumerate
+myArray.forEach(function(item, idx){
+ console.log(`The item with id ${idx} is ${item}`)
+});
+
+///// ES 6 simple one
 for (const item of myArray){}
+
+///// ES 6 enumerate
 for (const [num, item] of myArray.entries(){}
+
 // loop over objects
 const resturants = {
 fri: {openning: 8 , close: 10},
