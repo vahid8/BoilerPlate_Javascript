@@ -654,6 +654,23 @@ vahid.calcAge();
 console.log(vahid.__proto__);
 ```
 
+ES6 classes and methods
+```
+class Person{
+  constructor(firstName, birthYear){
+    this.firstName = firstName;
+    this.lastName = lastName;
+   }
+   //Methods will be added automatically to the prototype
+   calcAge() {
+    console.log(2037 - this.birthYear);
+   }
+    
+}
+const jessica = new Person('jessica', 1996);
+jessica.calcAge();
+```
+
 
 
 <!-- DOM manupulation -->
