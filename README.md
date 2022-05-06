@@ -645,7 +645,7 @@ const Person = function(firstName, birthYear){
 const vahid = new Person('vahid',1990);
 console.log(vahid instanceof Person);
 ```
-2- Prototype: add method to objects
+2- Prototype (instanc methods): add method to objects
 ```
 Person.prototype.calcAge = function(){
   console.log(2037 - this.birthYear);
@@ -653,22 +653,53 @@ Person.prototype.calcAge = function(){
 vahid.calcAge();
 console.log(vahid.__proto__);
 ```
+3- static methods for constructor functions
+```
+Person.hey = function(){ console.log(this); }
+```
+4- Inheeritence
+```
+const Student = function (firstName, birthYear, course) {
+  Person.call(this, firstName, birthYear); Inherit all var definitions and prototypes
+  this.course = course;
+}
+```
 
-ES6 classes and methods
+ES6 classes and methods (instance and static)
 ```
 class Person{
   constructor(firstName, birthYear){
     this.firstName = firstName;
     this.lastName = lastName;
    }
+   // 
    //Methods will be added automatically to the prototype
    calcAge() {
     console.log(2037 - this.birthYear);
    }
+   
+   //static method
+   static hey(){ console.log(this) };
     
 }
 const jessica = new Person('jessica', 1996);
 jessica.calcAge();
+Person.hey();
+```
+
+Object create and assign variable and mehods
+```
+const PersonProto = {
+  calcAge() {
+    console.log(2037 - this.birthYear);
+    },
+};
+
+const steven = Object.create(PersonProto);
+steven.name = 'Steven';
+steven.birthYear = 2002;
+steven.calcAge();
+
 ```
 
 
