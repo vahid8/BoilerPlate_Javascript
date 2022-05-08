@@ -712,7 +712,16 @@ const steven = Object.create(PersonProto);
 steven.name = 'Steven';
 steven.birthYear = 2002;
 steven.calcAge();
-
+```
+Inhertitence
+```
+const StudentProto = Object.create(PersonProto);
+StudentProto.init = funcion(firstName, birthYear, course) {
+  PersonProto.init.call(this, firstName, birthYear);
+  this.course = course;
+};
+const jay = Object.create(StudentProto);
+jay.init('jay', 2010, 'computer Science');
 ```
 
 
