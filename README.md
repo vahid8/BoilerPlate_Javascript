@@ -665,7 +665,7 @@ const Student = function (firstName, birthYear, course) {
 }
 ```
 
-ES6 classes and methods (instance and static)
+ES6 classes and methods (instance and static) $ inhertience
 ```
 class Person{
   constructor(firstName, birthYear){
@@ -685,6 +685,14 @@ class Person{
 const jessica = new Person('jessica', 1996);
 jessica.calcAge();
 Person.hey();
+
+// Inheritence
+class Student extends Person {
+  constructor(firstName, birthYear, course){
+  super(firstName, birthYear);
+  this.course = course;
+  }
+}
 ```
 
 Object create and assign variable and mehods
