@@ -816,6 +816,14 @@ const myContent = '<div class ="movement_row">
 myClassContainer.insertAdjacentHTML('afterbegin', myContent) //add the new content to the innerHTML
 ```
 
+
+- DOM Add only text to an existing element
+```
+const description = document.querySelector('#myDiv')
+const  myMessage = ' Hello there. Im here';
+description.insertAdjacentText('beforeend', myMessage) //add the new content to the innerHTML
+```
+
 - DOM create, insert and remove element
 ```
 const message = document.createElement('div'); // create a div element
@@ -831,6 +839,7 @@ message.remove(); // new method to remove
 })
 
 ```
+
 
 - DOM addEventListener (list of all events on mdn javascript events)
 ```
