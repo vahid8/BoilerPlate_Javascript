@@ -54,6 +54,7 @@
     </li>    
     <li><a href="#Dates">Dates</a></li>
     <li><a href="#OOP">OOP</a></li>
+    <li><a href="#Promise">Promise</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
         <li><a href="#Selectors">Selectors</a></li> 
@@ -724,6 +725,58 @@ const jay = Object.create(StudentProto);
 jay.init('jay', 2010, 'computer Science');
 ```
 
+
+
+<!-- Promise -->
+## Promise
+promisies have priority over callbacks.
+
+create a resolved (already succed) promise:
+```
+Promise.resolve('Resolved promise 1').then(res => console.log(res));
+```
+create a rejected promise:
+```
+Promise.reject('rejected promise 1').catch(res => console.error(res));
+```
+
+Create a promise from scratch
+```
+const myPromise = new Promise(function(resolve , reject){
+setTimeout(function(){
+  if (Math.random() >= 0.5){
+    resolve('You Win');
+  }else{
+    reject(new Error('You lost your money'));
+  }
+}, 2000);
+}
+// consume it
+myPromise.then(res => console.log(res)).catch(err => console.error(err));
+```
+promisifying setTimeout
+```
+const wait = function(seconds) {
+  return new promise(function(resolve){
+    setTimeout(resolve, seconds * 1000);    
+  });
+}
+//consume it
+wait(2).then(() => console.log('I waited for 2 seconds'));
+```
+promisifying GetPosition API
+```
+const getPosition = function() {
+  return new promise(function(resolve, reject){
+  navigator.geolocation.getCurrentPosition(resolve, reject);    
+  });
+};
+//consume it
+getPosition().then(pos => {
+  const {latitude: lat, longitude: lng} = pos.coords; // Get pos.coords.lattitude and pos.coords.longitude as lat ,lng names 
+  console.log(`You are at La ${lat}, Lo ${lng}`));
+}
+```
 
 
 <!-- DOM manupulation -->
