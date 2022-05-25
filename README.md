@@ -55,6 +55,7 @@
     <li><a href="#Dates">Dates</a></li>
     <li><a href="#OOP">OOP</a></li>
     <li><a href="#Promise">Promise</a></li>
+    <li><a href="#Async-Await">Async-Await</a></li>
     <li><a href="#DOM-manupulation">DOM manupulation</a>
       <ul>
         <li><a href="#Selectors">Selectors</a></li> 
@@ -735,6 +736,12 @@ create a resolved (already succed) promise:
 ```
 Promise.resolve('Resolved promise 1').then(res => console.log(res));
 ```
+
+Running Promises in Parallel
+```
+promise.all([fetch("..."), fetch("..."), fetch("...")].then(res => res.map(item => console.log(item))) //result is a vector of res
+```
+
 create a rejected promise:
 ```
 Promise.reject('rejected promise 1').catch(res => console.error(res));
@@ -754,6 +761,8 @@ setTimeout(function(){
 // consume it
 myPromise.then(res => console.log(res)).catch(err => console.error(err));
 ```
+
+
 promisifying setTimeout
 ```
 const wait = function(seconds) {
@@ -777,6 +786,38 @@ getPosition().then(pos => {
   console.log(`You are at La ${lat}, Lo ${lng}`));
 }
 ```
+
+<!-- Async-Await -->
+## Async-Await
+There is a better way (cleaner code) than using .then to consume the promises and thats it.
+```
+const myTest = async function(country){
+  const result = await fetch('https://.../${country});
+  // do something with result
+  const myText = "your country is: "+ result; 
+  return myText;
+}
+
+
+myTest('Italy').then(res => console.log(res));
+```
+use it with try ...catch
+```
+const myTest = async function(country){
+  try{
+    const result = await fetch('https://.../${country});
+    // do something with result
+    const myText = "your country is: "+ result; 
+    return myText;
+  }catch(err){
+    console.error(err);
+    throw err;
+  }
+}
+
+myTest('Italy').then(res => console.log(res));
+```
+
 
 
 <!-- DOM manupulation -->
