@@ -786,6 +786,26 @@ getPosition().then(pos => {
   console.log(`You are at La ${lat}, Lo ${lng}`));
 }
 ```
+other promise combinators: race, allSettled and any
+```
+//1. promise.race -> retuns first setteled promise (result)  from an array of promisses it can be a succeded or rejected one
+(async function(){
+  const res = await Promise.race([
+    getJson('fetch('https://.../${Italy})'),
+    getJson('fetch('https://.../${Spain})'),
+    getJson('fetch('https://.../${Morako})'),
+  ]);  
+})();
+
+//2. return an array of all settled promises all rejected and succeded
+Promise.allSettled([
+  Promise.resolve('Success'),
+  Promise.reject('Error'),
+  Promise.resolve('Anothr success');   
+])
+
+//3. Promise.any : returns the first succeded promise
+```
 
 <!-- Async-Await -->
 ## Async-Await
