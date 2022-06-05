@@ -1007,3 +1007,40 @@ elemnt taht has the eventlistener function.
 ```
 
 
+<!-- Importing Modules -->
+## How to include it in Html
+<script type='module' ,src ="myModule.js"></script>
+## How to create a script as a module
+1- modules are imported before normal scripts and are Synchronous to make sure they are imported before the code gets running
+2- everything in module is only available there ( on that scope) unless you export it
+3- it has 'use strict' by defualt and you dont need to add it.
+4- you can make things available to other scopes for importing by using the keyword 'export' e.g :
+```
+export const myFunction = function(name){
+ console.log(" Hello " + name);
+}
+```
+## Importing a function from a module
+```
+import { myFunction } from './myModule.js';
+```
+
+## Importing everything
+```
+import * as myNewModule from './myModule.js';
+// use it like a class
+myNewModule.myFunction(Vahid);
+```
+
+## Default import and export
+Best practice is to only export one thing per module. In this case we can use default export as below:
+```
+export default function(name){
+ console.log(" Hello " + name);
+}
+```
+and we import it with any name we want withoud brackets:
+```
+import sayHello from './myModule.js';
+```
+
