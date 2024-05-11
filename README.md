@@ -90,6 +90,7 @@ npm run dev
 | ```<Header />``` | Use Header component inside an other HTML component |
 | ```<h1>{myValues[i+1]} are here</h1>```| access to data in writing react code |
 | ```import reactImg from './assets/react-core-concepts.png'``` then use ```src={reactImg}```| using image sources |
+| ```function coreConcept(props){props.title,...}``` then use ```<coreConcept title="a" values=[1,2] img={reactImg}```| Props |
 
 
 ### variables definition
