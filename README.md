@@ -75,6 +75,14 @@
 'use strict' :Type this line to actiavte strict mode ( it improves debugging)   
 boxing concept: using () around primitives will convert them to objects so we can apply methods on them e.g (2.7356).ToFixed(2)   
 
+### Running react app
+```
+option 1: use online sandbox by typing following url in the browser:  react.new
+option2 :locally
+npm create vite@latest react-project
+npm install
+npm run dev
+```
 ### variables definition
 ```
 let, const (in ES6)
