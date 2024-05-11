@@ -83,6 +83,15 @@ npm create vite@latest react-project
 npm install
 npm run dev
 ```
+
+### React
+| Description | Command |
+| --- | --- |
+| <Header /> | Use Header component inside an other HTML component |
+| <h1>{myValues[i+1]} are here</h1>| access to data in writing react code |
+| import reactImg from './assets/react-core-concepts.png' then use src={reactImg}| using image sources |
+
+
 ### variables definition
 ```
 let, const (in ES6)
