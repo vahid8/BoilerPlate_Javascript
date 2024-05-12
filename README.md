@@ -94,6 +94,28 @@ npm run dev
 | ```function coreConcept({title,values,img}){title,...}``` then use ```<coreConcept title="a" values=[1,2] img={reactImg} />```| Props (alternative) |
 | ```function TabButton(props){ return <button>{props.children}</button>``` then use ```<TabButton>Components</TabButton>``` or ```<TabButton label="Components"/> using props.label```| Using children when there is only one attribute |
 
+### React Descriptions
+```
+1- write clcik event listener (option 1):
+export default function TabButton (props){
+function handleClick(){
+console.log(props.myName);
+}
+return(
+<button onClick={handleClick}>{props.myName}</button>
+);
+}
+2- write clcik event listener (option 2):
+pass function in propmts as value e.g: (define the function handleSelect somewhere and pass it to the component)
+<TabButton onSelect={handleSelect}> MyName </TabButton>
+and use it in that component as this:
+export default function TabButton ({children, onSelect}){
+return(
+  <button onClick={onSelect}>{children}</button>);
+}
+
+```
+
 
 ### variables definition
 ```
