@@ -92,6 +92,7 @@ npm run dev
 | ```import reactImg from './assets/react-core-concepts.png'``` then use ```src={reactImg}```| using image sources |
 | ```function coreConcept(props){props.title,...}``` then use ```<coreConcept title="a" values=[1,2] img={reactImg} />```| Props |
 | ```function coreConcept({title,values,img}){title,...}``` then use ```<coreConcept title="a" values=[1,2] img={reactImg} />```| Props (alternative) |
+| ```function TabButton(props){ return <button>{props.children}</button>``` then use ```<TabButton>Components</TabButton>``` or ```<TabButton label="Components"/> using props.label```| Using children when there is only one attribute |
 
 
 ### variables definition
