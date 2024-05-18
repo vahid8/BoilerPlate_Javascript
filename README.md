@@ -94,6 +94,16 @@ npm run dev
 | ```function coreConcept({title,values,img}){title,...}``` then use ```<coreConcept title="a" values=[1,2] img={reactImg} />```| Props (alternative) |
 | ```function TabButton(props){ return <button>{props.children}</button>``` then use ```<TabButton>Components</TabButton>``` or ```<TabButton label="Components"/> using props.label```| Using children when there is only one attribute |
 
+### React Styling
+| Method               | Description                           | Example Usage                                       |
+|----------------------|---------------------------------------|-----------------------------------------------------|
+| **Inline Styling**   | Directly within elements              | ```<h1 style={{ color: 'blue' }}>Hello, world!</h1>``` |
+| **CSS Stylesheets**  | Separate CSS files                    | ```import './styles.css';```                        |
+| **CSS Modules**      | Scoped styles using `.module.css`     | ```import styles from './App.module.css';```        |
+| **Styled Components**| CSS-in-JS library                     | ```import styled from 'styled-components';```       |
+| **Emotion**          | CSS-in-JS library with `@emotion/react` | ```import { css } from '@emotion/react';```         |
+| **Tailwind CSS**     | Utility-first CSS framework           | ```className="text-blue-500 text-2xl"```            |
+
 ### React Descriptions
 ```
 1- write clcik event listener (option 1):
